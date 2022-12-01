@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    background-image: url(gambar.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    height: 450px;
+    width: 450px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 1px,1px,5px black;
+    padding: 40px 30px;
+}
+
+.container .login-text{
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.container .login-email .input-group{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.container .login-email .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 1rem;
+    outline: black;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background-color: aqua;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn:hover{
+    transform: translate(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text{
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a{
+    text-decoration: none;
+    color: darkblue;
+    @media(max-wight:440px){.container{width: 430px;}}
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    transition: .3s;
+}
+
+.container .login-email .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #a29bfe;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 
+    .3s;
+}
+
+.container .login-email .input-group .btn:hover{
+    transform: translate(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text{
+    color: #111;
+    font-weight: 600;
+}
+
+/* @media screen and (min-width: 550px) {
+    .screen{
+    width: 100px;
+    background-image: url(sriasih.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+} */
+
+/* @media screen and (max-width: 760px) {
+    .container{
+        margin: 5px 30px;
+    }
+    .screen{
+    width: 80px;
+    background-image: url(sriasih.jpg);
+    min-height: 100px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 1400px) {
+    body{
+    width: 100px;
+    background-image: url(sriasih.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+} */
