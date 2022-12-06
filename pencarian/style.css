@@ -75,6 +75,11 @@ form input{
     height: 80%;
     
 }
+.container-image iframe{
+    width: 100%;
+    height: 80%;
+    
+}
 
 .container-video{
     display: grid;
