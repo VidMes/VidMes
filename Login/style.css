@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+  
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+.login-form {
+    height: 450px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 1px,1px,5px black;
+    padding: 40px 30px;
+}
+
+.login-form .login-text{
+    color: #111;
+    font-weight: 500;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: capitalize;
+}
+
+.login-form .login-email .input-group{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.login-form .login-email .input-group input{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    background: transparent;
+    padding: 15px 20px;
+    font-size: 1rem;
+    outline: black;
+    transition: .3s;
+}
+
+.login-form .login-email .input-group .btn{
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background-color: #4caf50;
+    outline: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.login-form .login-email .input-group .btn:hover{
+    transform: translate(-5px);
+    background: #6c5ce7;
+}
+
+.login-register-text{
+    color: #111;
+    font-weight: 600;
+}
+
+.login-register-text a{
+    text-decoration: none;
+    color: #fff;
+    @media(max-wight:440px){.container{width: 430px;}}
+}
+  
+input {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    padding: 15px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    background: transparent;
+    transition: .3s;
+}
+
+button.register{
+    display: inline;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+}
+
+img {
+    width: 20px;
+}
+
+button{
+    font-size: 16px;
+    background-color: transparent;
+    border: none;
+    border-radius: 4px;
+}
+  
