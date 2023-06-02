@@ -18,3 +18,16 @@ if (currentTime >= 5 && currentTime < 12) {
 
 // Mengubah sumber video
 backgroundVideo.src = videoSource;
+
+var page1 = document.getElementById("page1");
+var page2 = document.getElementById("page2");
+
+function nextPage() {
+    page1.style.display = "none";
+    page2.style.display = "block";
+}
+
+function prevPage() {
+    page2.style.display = "none";
+    page1.style.display = "block";
+}
