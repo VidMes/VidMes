@@ -1,33 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
     <div class="container">
-        <video id="background-video" loop autoplay muted></video>
-        <div class="login-form">
-            <form action="" method="POST" class="login-email">
-                <p style="font-size: 3rem; font-weight:800;">Register</p>
-                <div class="input-group"><input type="text" placeholder="Name" name="name"></div>
-                <div class="input-group"><input type="text"placeholder="Username" name="username"></div>
-                <div class="input-group"><input type="email" placeholder="Email" name="email"></div>
-                <div class="input-group"><input type="password" placeholder="Password" name="password"></div>
-                <div class="input-group"><input type="password" placeholder="Konfirmasi Password" name="konfirmasi password"></div>
-                <div class="input-group"><button name="submit" class="btn">Login</button></div>
-                <a href="/folder/VM/Login/login.html">Login</a></p>
+        <div class="Page" id="page1">
+            <h1>Register - Page 1</h1>
+            <video id="background-video" loop autoplay muted></video>
+            <form method="POST" action="register.php">
+                <div class="form-group">
+                    <input type="text" name="first_name" placeholder="First Name" required>
+                    <input type="text" name="last_name" placeholder="Last Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="date" name="birthdate" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select name="gender" required>
+                        <option value="">-- Select Gender --</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <button type="button" onclick="nextPage()">Next</button>
+            </form>
+        </div>
+        
+        <div class="Page" id="page2">
+            <h1>Register - Page 2</h1>
+            <video id="background-video" loop autoplay muted></video>
+            <form method="POST" action="register.php">
+                <div class="form-group">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" name="password" placeholder="Password" required>
+                    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <button type="button" onclick="prevPage()">Previous</button>
+                <input type="submit" value="Register">
             </form>
         </div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
-
 </html>
