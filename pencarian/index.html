@@ -1,95 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Tambah Gambar</title>
-  </head>
-  <body>
-    <div
-      class="center"
-      style="
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      "
-    >
-      <form
-        action=""
-        method="get"
-        style="display: flex; width: 100%; margin-left: 20px"
-      >
-        <input
-          type="text"
-          name="keyword"
-          size="20"
-          autofocus
-          placeholder="masukan pencarian"
-          autocomplete="off"
-          style="width: 200px; margin-left: 50px"
-        />
-        <button type="submit" name="cari"><img src="" alt="" /></button>
-      </form>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Halaman Explorer</title>
+</head>
+<body>
 
-      <div class="container-image" style="width: 90%">
-        <img src="gambar 1.jpeg" />
-        <img src="gambar 2.jpg" />
-        <img src="gambar 3.jpg" />
-        <img src="gambar 4.jpg" />
-        <img src="gambar 5.jpg" />
-        <img src="gambar 6.jpg" />
-        <img src="gambar 7.jpg" />
-        <img src="gambar 8.jpg" />
-        <img src="gambar 9.jpg" />
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
-        <iframe
-          src="https://drive.google.com/file/d/10DaGxL17u7bZJTY-NBZTZizjfiO54UWC/preview"
-          allow="autoplay"
-          style="width: 100%"
-        ></iframe>
+    <div class="navbar">
+        <h1>Halaman Explore</h1>
+        <div class="search-container">
+            <div class="search-box">
+              <input type="text" class="search-input" placeholder="Cari...">
+              <button class="search-button">&#128269;</button>
+            </div>
+          </div>    
+    </div>
+    
+    <div class="container">
+      <div id="mediaContainer">
+        <img class="media" src="gambar/wallpaperbetter (1).jpg" alt="Gambar 1">
+        <img class="media" src="gambar/wallpaperbetter (2).jpg" alt="Gambar 2">
+        <img class="media" src="gambar/wallpaperbetter (3).jpg" alt="Gambar 3">
+        <img class="media" src="gambar/wallpaperbetter (4).jpg" alt="Gambar 4">
+        <img class="media" src="gambar/wallpaperbetter (5).jpg" alt="Gambar 5">
+        <img class="media" src="gambar/wallpaperbetter (6).jpg" alt="Gambar 6">
+        <video class="media" controls>
+          <source src="video/video 1.mp4" type="video/mp4">
+        </video>
+        <video class="media" controls>
+          <source src="video/video 2.mp4" type="video/mp4">
+        </video>
+        <video class="media" controls>
+          <source src="video/video 3.mp4" type="video/mp4">
+        </video>
+        <video class="media" controls>
+          <source src="video/video 4.mp4" type="video/mp4">
+        </video>
+        <video class="media" controls>
+          <source src="video/video 5.mp4" type="video/mp4">
+        </video>
+        <video class="media" controls>
+          <source src="video/video 6.mp4" type="video/mp4">
+        </video>
       </div>
     </div>
 
-    <p class="container-button">
-      <a href="/VM/welcom/index.html">
-        <img src="house.png" alt="" />
-      </a>
-      <a href="/VM/pencarian/index.html">
-        <img src="search.png" alt="" />
-      </a>
-      <a href="/VM/post/index.html">
-        <img src="plus.png" alt="" />
-      </a>
-      <a href="/VM/profile/index.html">
-        <img src="user.png" alt="" />
-      </a>
-    </p>
-  </body>
+  <script src="script.js"></script>
+
+</body>
 </html>
