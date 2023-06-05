@@ -119,17 +119,3 @@ function addReply(parentComment, replyText) {
 
   replyInput.value = "";
 }
-
-
-
-
-
-// function openCommentsModal() {
-//     var modal = document.getElementById("comments-modal");
-//     modal.style.display = "flex";
-// }
-
-// function closeCommentsModal() {
-//     var modal = document.getElementById("comments-modal");
-//     modal.style.display = "none";
-// }
