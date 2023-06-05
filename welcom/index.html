@@ -1,67 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
-    <title>Tambah Gambar</title>
+    <title>Dasbor</title>
 </head>
-    
-    <div class="icon">
-        <a href="">
-            <img src="icon/chat-right.svg" alt="">
-        </a>
+<body>
+    <div class="navbar">
+        <h1>VidMess</h1>  
     </div>
-
-    <p><h1>Selamat datang di VidMes</h1></p>
-    <div class="container-short">
-        <img src="gambar 1.jpeg">
-        <img src="gambar 1.png">
-    </div>
-
-    <div class="container-content">
-        <div class="container-post">
-            <div class="container-buttom">
-                <img src="gambar 1.png">
-                    <p><h2>VidMes</h2></p>
-                    <div class="container">
-                        <img src="dots.png">
-                    </div>
-            </div>
-                <div class="gambar">
-                    <img src="gambar 2.jpeg">
-                </div>
-            <div class="container-icon">
-                    <img src="heart.png">
-                    <img src="chat.png">
-                    <img src="send.png">
-                <div class="container">
-                    <img src="bookmark.png">
-                </div>
-            </div>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas odit sed impedit recusandae quas. Unde suscipit, magnam fuga magni officiis laudantium mollitia corrupti at id odit error pariatur optio alias?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium totam veniam quod corrupti consequatur, maiores officiis harum officia cum, illum illo iste et, labore temporibus aperiam. Iste, laborum eveniet? Facere?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iusto maiores illum rerum ullam doloribus similique architecto aperiam ex, dolorem, esse hic repellat aliquid id, numquam rem totam odit quibusdam.
-                </p>
-            </div>
+    <div class="profile-section">
+        <img src="wallpaperbetter (1).jpg" alt="Profile">
+        <div class="username">
+            <h1>Username</h1>
         </div>
     </div>
+    <div class="media-item">
+        <div class="profile-section">  
+            <img src="wallpaperbetter (1).jpg" alt="Profile">  
+            <div class="username">
+                <h2>Username</h2>
+            </div>
+            <div class="options" onclick="showOptions(this)">
+                &#8942;
+                <div class="dropdown-menu">
+                    <a href="#">Edit Gambar</a>
+                    <a href="#">Hapus Gambar</a>
+                </div>
+            </div>
+        </div>
+        <img src="wallpaperbetter (1).jpg" alt="gambar 1">
+        <div class="media-info">
+            <img src="like.png" alt="Like" onclick="likeButtonClicked(this)">
+            <span class="like-count">0</span>
+            <div class="comment-logo">
+                <img src="comment-logo.png" alt="Logo Komentar" onclick="showComments()">
+                <span id="comment-count">0</span>
+            </div>
+            <img src="share.png" alt="Share" onclick="shareButtonClicked(this)">
+            <img src="save.png" alt="Save" onclick="saveButtonClicked(this)">
+        </div>
+        <div class="media-description">
+            <p>Deskripsi gambar atau video.</p>
+        </div>
+        <div class="comment-section">
+            <button class="view-comments" onclick="showComments()">Lihat Kolom Komentar</button>
+          </div>
+          <div id="comment-popup" class="popup">
+            <div class="popup-content">
+              <h3>Kolom Komentar</h3>
+              <div id="comment-list"></div>
+              <input type="text" id="comment-input">
+              <button onclick="addComment()">Tambah Komentar</button>
+              <button class="close-btn" onclick="hideComments()">Tutup</button>
+            </div>
+          </div>  
 
-    <div class="container-button">
-        <a href="/VM/welcom/index.html">
-            <img src="house.png" alt="">
-        </a>
-        <a href="/VM/pencarian/index.html">
-            <img src="search.png" alt="">
-        </a>
-        <a href="/VM/post/index.html">
-            <img src="plus.png" alt="">
-        </a>
-        <a href="/VM/profile/index.html">
-            <img src="user.png" alt="">
-        </a>
-    </div>
+    <script src="script.js"></script>
+</body>
 </html>
